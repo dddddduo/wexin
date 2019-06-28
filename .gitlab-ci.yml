@@ -1,0 +1,33 @@
+stages:
+  - build
+
+
+
+master:
+  stage: build
+  script:
+   - rm -rf node_models
+   - npm install -g cnpm --registry=https://registry.npm.taobao.org
+   - cnpm install
+   - npm run build
+   - cp -rf dist/* /var/www/index/wx_web
+  tags:
+   - 'web_v2_dev'
+  only:
+    - master
+  when:
+    manual
+
+# staging:
+#   stage: build
+#   script:
+#    - rm -rf node_models
+#    - cnpm install
+#    - npm run build
+#    - cp -rf dist/* /var/www/index/ninstar
+#   tags:
+#    - 'web_v2_dev'
+#   only:
+#     - v2
+#   when:
+#     manual

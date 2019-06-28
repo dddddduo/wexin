@@ -1,0 +1,31 @@
+@mixin paddingLeftRight {
+  padding: 0 rem(20px);
+  height: rem(40px);
+  line-height: rem(40px);
+  background: #fff;
+}
+@mixin buttonList {
+  outline: none;
+  width: rem(74px);
+  height: rem(32px);
+  background: $bg;
+  border: rem(1px) solid #dcdcdc;
+  border-radius: rem(4px);
+  display: inline-block;
+  cursor: pointer;
+  color: #bbbbbb;
+  line-height: rem(32px);
+  text-align: center;
+}
+@mixin imgList {
+  display: inline-block;
+  width: rem(88px);
+  height: rem(60px);
+  margin: rem(10px);
+}
+@mixin pdfList {
+  display: inline-block;
+  padding: rem(5px) rem(10px);
+  text-decoration: underline;
+  color: $theme;
+}
