@@ -21,7 +21,7 @@
     "js-sha512": "^0.8.0",
     "lib-flexible": "^0.3.2",
     "md5": "^2.2.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "nprogress": "^0.2.0",
     "px2rem-loader": "^0.1.9",
     "qrcode-svg": "^1.0.0",
